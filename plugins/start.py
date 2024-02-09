@@ -38,12 +38,12 @@ async def start(client,message):
 	except:
 	    await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	__Saya bot pengubah nama file, Silakan kirim telegram apa pun
+**Dokumen Atau Video** dan masukkan nama file baru untuk mengganti namanya__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇩" ,url="https://t.me/ZoneDangerSex") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/Revanstoreya") ]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -51,28 +51,28 @@ async def start(client,message):
 	            await client.send_message(id,"Your Friend already Using Our Bot")
 	            await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	__Saya bot pengubah nama file, Silakan kirim telegram apa pun
+**Dokumen Atau Video** dan masukkan nama file baru untuk mengganti namanya__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇩" ,url="https://t.me/ZoneDangerSex") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/Revanstoreya") ]  ]))
 	        except:
 	             return
 	    else:
-	         await client.send_message(id,"Congrats! You Won 100MB Upload limit")
+	         await client.send_message(id,"Selamat! Anda Memenangkan batas Unggah 100MB")
 	         _user_= find_one(int(id))
 	         limit = _user_["uploadlimit"]
 	         new_limit = limit + 104857600
 	         uploadlimit(int(id),new_limit)
 	         await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	__Saya bot pengubah nama file, Silakan kirim telegram apa pun
+**Dokumen Atau Video** dan masukkan nama file baru untuk mengganti namanya__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇩" ,url="https://t.me/ZoneDangerSex") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/Revanstoreya") ]  ]))
 	         
 
 
@@ -85,10 +85,10 @@ async def send_doc(client,message):
        	try:
        		await client.get_chat_member(update_channel, user_id)
        	except UserNotParticipant:
-       		await message.reply_text("**__You are not subscribed my channel__** ",
+       		await message.reply_text("**__Anda tidak berlangganan saluran saya__** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("Support 🇮🇩" ,url=f"https://t.me/{update_channel}") ]   ]))
        		return
        try:
            bot_data = find_one(int(botid))
@@ -103,7 +103,7 @@ async def send_doc(client,message):
        	daily = user_deta["daily"]
        	user_type = user_deta["usertype"]
        except:
-           await message.reply_text("database has been Cleared click on /start")
+           await message.reply_text("database telah dibersihkan, klik /start")
            return
            
            
@@ -118,7 +118,7 @@ async def send_doc(client,message):
        conversion = datetime.timedelta(seconds=left)
        ltime = str(conversion)
        if left > 0:       	    
-       	await message.reply_text(f"```Sorry Dude I am not only for YOU \n Flood control is active so please wait for {ltime}```",reply_to_message_id = message.id)
+       	await message.reply_text(f"```Maaf ya, Gue bukan hanya untuk LOE DOANG \n Banyak Pengguna sedang aktif jadi harap tunggu {ltime}```",reply_to_message_id = message.id)
        else:
        		# Forward a single message
            		
@@ -139,26 +139,26 @@ async def send_doc(client,message):
        			used_limit(message.from_user.id,0)			     		
        		remain = limit- used
        		if remain < int(file.file_size):
-       		    await message.reply_text(f"Sorry! I can't upload files that are larger than {humanbytes(limit)}. File size detected {humanbytes(file.file_size)}\nUsed Daly Limit {humanbytes(used)} If U Want to Rename Large File Upgrade Your Plan ",reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Upgrade 💰💳",callback_data = "upgrade") ]]))
+       		    await message.reply_text(f"Maaf! Saya tidak dapat mengunggah file yang lebih besar dari {humanbytes(limit)}. File size detected {humanbytes(file.file_size)}\nUsed Daly Limit {humanbytes(used)} Jika Anda Ingin Mengganti Nama File Besar, Tingkatkan Paket Anda ",reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Upgrade 💰💳",callback_data = "upgrade") ]]))
        		    return
        		if value < file.file_size:
        		    if STRING:
        		        if buy_date==None:
-       		            await message.reply_text(f" You Can't Upload More Then {humanbytes(limit)} Used Daly Limit {humanbytes(used)} ",reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Upgrade 💰💳",callback_data = "upgrade") ]]))
+       		            await message.reply_text(f" Anda Tidak Dapat Mengunggah Lebih Banyak Lagi {humanbytes(limit)} Used Daly Limit {humanbytes(used)} ",reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Upgrade 💰💳",callback_data = "upgrade") ]]))
        		            return
        		        pre_check = check_expi(buy_date)
        		        if pre_check == True:
-       		            await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {humanize.naturalsize(file.file_size)}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
+       		            await message.reply_text(f"""__Apa yang LOE ingin GUE lakuin dengan file ini?__\n**File Nama** :- {filename}\n**File Ukuran** :- {humanize.naturalsize(file.file_size)}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
        		            total_rename(int(botid),prrename)
        		            total_size(int(botid),prsize,file.file_size)
        		        else:
        		            uploadlimit(message.from_user.id,2147483648)
        		            usertype(message.from_user.id,"Free")
 	
-       		            await message.reply_text(f'Your Plane Expired On {buy_date}',quote=True)
+       		            await message.reply_text(f'Plane Kamu Telah Kadaluarsa Harap Membeli Lagi {buy_date}',quote=True)
        		            return
        		    else:
-       		          	await message.reply_text("Can't upload files bigger than 2GB ")
+       		          	await message.reply_text("Tidak dapat mengunggah file yang lebih besar dari 2 GB ")
        		          	return
        		else:
        		    if buy_date:
@@ -171,7 +171,7 @@ async def send_doc(client,message):
        		    fileid = file.file_id
        		    total_rename(int(botid),prrename)
        		    total_size(int(botid),prsize,file.file_size)
-       		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
+       		    await message.reply_text(f"""__Apa yang LOE ingin GUE lakuin dengan file ini?__\n**File Nama** :- {filename}\n**File Ukuran** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
        		[[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),
        		InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
        		

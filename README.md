@@ -1,15 +1,11 @@
-# Rename Bot Premium Repo. Give a star and Use the Repo as your need.
-
-----
-
-# Features
- - Renames very fast .
- - Permanent Thumbnail support.
- - Supports Broadcasts.
- - Set custom caption.
- - Force subscribe available.
- - Deploy on any PaaS.
- - Developer Service 24x7. 🔥
+# Fitur
+  - Mengganti nama dengan sangat cepat.
+  - Dukungan Gambar Kecil Permanen.
+  - Mendukung Siaran.
+  - Tetapkan keterangan khusus.
+  - Paksa berlangganan tersedia.
+  - Terapkan pada PaaS apa pun.
+  - Layanan Pengembang 24x7. 🔥
 
 # Required Configs 
 
@@ -75,5 +71,5 @@ python3 bot.py
 ```
 
  # Join Telegram Channel 
- - [WebXBots](https://t.me/WebXBots). Bot Updates Channel
- - Support Group [WebX-Support](https://t.me/Web_X_Support). For Bug report.
+ - [RenameXBots](https://t.me/PremiumRenameBot). Bot Updates Channel
+ - Support Group [RenameX-Support](https://t.me/ZoneDangerSex). For Bug report.

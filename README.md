@@ -43,7 +43,7 @@ addpremium - (Admin Use Only)Add Users To Rename More Then 4Gb Files and Remove 
 
 * Clone the Repo
 ```
-git clone https://github.com/WebX-Divin/RenameBot-Premium
+git clone https://github.com/Rehansaputradewantoro/RenameBot-Premium
 ```
 * Move to the Repo Folder
 ```
@@ -71,5 +71,5 @@ python3 bot.py
 ```
 
  # Join Telegram Channel 
- - [RenameXBots](https://t.me/PremiumRenameBot). Bot Updates Channel
+ - [RenameXBots](https://t.me/PremiumRenameFileBot). Bot Updates Channel
  - Support Group [RenameX-Support](https://t.me/ZoneDangerSex). For Bug report.

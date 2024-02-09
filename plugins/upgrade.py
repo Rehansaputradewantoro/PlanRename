@@ -3,50 +3,49 @@ from pyrogram import Client , filters
 
 @Client.on_callback_query(filters.regex('upgrade'))
 async def upgrade(bot,update):
-	text = """**Free Plan User**
-	Daily  Upload limit 2GB
-	Price 0
+	text = """**PENGGUNA GRATIS**
+	Pemakaian  Batas Unggahan 2GB
+	Harga 0
 	
 	**VIP 1 ** 
-	Daily  Upload  limit 10GB
-	Price Rs 55  🇮🇳/🌎 0.67$  per Month
+	Pemakaian  Batas Unggahan 30GB
+	Harga Rp 30.000  🇮🇩/🌎 2.14$  per Month
 	
 	**VIP 2 **
-	Daily Upload limit 50GB
-	Price Rs 80  🇮🇳/🌎 0.97$  per Month
+	Pemakaian Batas Unggahan 65GB
+	Harga Rp 55.000  🇮🇩/🌎 3.93$  per Month
 	
-	Pay Using Upi I'd ```divindass@fbl```
+	Pembayaran bisa melalui Dana Atau Qris ```089652345702```
 	
-	After Payment Send Screenshots Of 
-        Payment To Admin"""
+	Tolong Setelah Melakukan Pembayaran Harap Kirim Bukti Transfer Tersebut. 
+        Pembayaran melalui Admin"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/webx_admin_bot")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/webx_admin_bot"),
-        			InlineKeyboardButton("UPI ",url = "https://t.me/webx_admin_bot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/Revans505")], 
+        			[InlineKeyboardButton("Paypal 🌎",url = "https://t.me/Revans505"),
+        			InlineKeyboardButton("Qris ",url = "https://t.me/Revas505")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
 async def upgradecm(bot,message):
-	text = """**Free Plan User**
-	Daily  Upload limit 2GB
-	Price 0
+	text = """**PENGGUNA GRATIS**
+	Pemakaian  Batas Unggahan 2GB
+	Harga 0
 	
 	**VIP 1 ** 
-	Daily  Upload  limit 10GB
-	Price Rs 55  🇮🇳/🌎 0.67$  per Month
+	Pemakaian  Batas Unggahan 40GB
+	Harga Rp 30.000  🇮🇩/🌎 2.14$  per Month
 	
 	**VIP 2 **
-	Daily Upload limit 50GB
-	Price Rs 80  🇮🇳/🌎 0.97$  per Month
+	Pemakaian Batas Unggahan 65GB
+	Harga Rp 55.000  🇮🇩/🌎 3.93$  per Month
 	
+	Pembayaran bisa melalui Dana Atau Qris ```089652345702```
 	
-	Pay Using Upi I'd ```divindass@fbl```
-	
-	After Payment Send Screenshots Of 
-        Payment To Admin"""
+	Tolong Setelah Melakukan Pembayaran Harap Kirim Bukti Transfer Tersebut. 
+        Pembayaran melalui Admin"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/webx_admin_bot")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/webx_admin_bot"),
-        			InlineKeyboardButton("Paytm",url = "https://t.me/webx_admin_bot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/Revans505")], 
+        			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/Revans505"),
+        			InlineKeyboardButton("Qris",url = "https://t.me/Revans505")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await message.reply_text(text = text,reply_markup = keybord)
